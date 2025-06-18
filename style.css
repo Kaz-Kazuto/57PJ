@@ -30,23 +30,46 @@ body {
   --item5-zIndex: 7;
   --item5-opacity: 0;
 }
+
+.content-wrapper {
+  padding: 10px 10%;
+}
+
 header {
-  width: 1140px;
-  max-width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
   height: 50px;
   align-items: center;
+  position: fixed;
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px,
+    rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 2px 2px -1px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px,
+    rgba(42, 51, 70, 0.03) 0px 10px 10px -5px,
+    rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+  z-index: 9999;
 }
 header .logo {
-  font-weight: bold;
+  max-width: 40px;
+  width: 100%;
 }
-header nav a {
+nav {
+  cursor: pointer !important;
+}
+
+nav .nav-item {
   margin-left: 30px;
   text-decoration: none;
   color: #555;
   font-weight: 500;
+  cursor: pointer !important;
+}
+
+nav .nav-item:hover {
+  color: #6fe6fc;
 }
 
 /* carousel */
@@ -54,7 +77,7 @@ header nav a {
   position: relative;
   height: 800px;
   overflow: hidden;
-  margin-top: -50px;
+  margin-top: 0px;
 }
 .carousel .list {
   position: absolute;
@@ -398,6 +421,105 @@ header nav a {
   transform: translate(-100%, -50%) rotate(90deg);
   filter: blur(130px);
 }
+
+/*--- Season  ---*/
+
+.season-header h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.season-card {
+  width: max-content;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.season-card .season-photo {
+  width: 300px;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.season-card .season-photo img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.season-content {
+  max-width: 300px;
+  width: 100%;
+  height: 450px;
+  bottom: 2%;
+  position: absolute;
+  z-index: 1;
+  /* background: #22c1c3; */
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.summer {
+  background: linear-gradient(to right, #eae374, #e2f4c7) !important;
+}
+.winter {
+  background: linear-gradient(to right, #d6fffb, #b3e3f4) !important;
+}
+.spring {
+  background: linear-gradient(to right, #f68f3c, #5e8d5a) !important;
+}
+
+.content-text {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.content-text .icon .material-symbols-outlined {
+  font-size: 30px;
+}
+
+.season-card:hover .season-content {
+  opacity: 0.9;
+}
+
+/* .content-text:hover {
+  background: -webkit-linear-gradient(#8ad8f6, #7bc7dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/*-- Trending --*/
+.trending-header h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.trending-photo-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+}
+
+.trending-photo img {
+  width: max-content;
+  height: 425px;
+}
+
 @media screen and (max-width: 991px) {
   /* ipad, tablets */
   .carousel .list .item {
