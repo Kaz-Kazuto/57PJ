@@ -1,193 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
     <!--Icon-->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <!-- Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-<header class="content-wrapper">
-    <div class="logo"><a href="/"><img src="/images/logo.jpg" class="img-fluid" alt=""></a></div>
-    <nav>
-        <a href="/" class="nav-item">Home</a>
-        <a href="/" class="nav-item">Products</a>
-        <a href="/" class="nav-item">Contact</a>
-    </nav>
-</header>
-<div class="main-carousel mb-5">
-    <div class="carousel">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Swiper Js-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="content-wrapper">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.jpg" class="img-fluid" alt="" /></a>
+      </div>
+      <!-- <div class="search-box input-group">
+        <input type="text" class="form-control" placeholder="" aria-label=" aria-describedby="basic-addon2">
+  <span class="input-group-text"><span class="material-symbols-outlined">
+search
+</span></span>
+    </div> -->
+      <nav class="d-flex gap-4">
+        <a href="/" class="nav-item"
+          ><span class="material-symbols-outlined"> search </span></a
+        >
+        <a href="/" class="nav-item"><p>Home</p></a>
+        <a href="/" class="nav-item"><p>Products</p></a>
+        <a href="/" class="nav-item"><p>Products</p></a>
+        <a href="/" class="nav-item"
+          ><span class="material-symbols-outlined">shopping_bag</span></a
+        >
+        <a href="/" class="nav-item"
+          ><span class="material-symbols-outlined">favorite</span></a
+        >
+        <a href="/" class="nav-item"
+          ><span class="material-symbols-outlined">account_circle</span></a
+        >
+      </nav>
+    </header>
+    <div class="main-carousel mb-5">
+      <div class="carousel">
         <div class="list">
-            <div class="item ">
-                <img src="images/shoes.png">
-                <div class="introduce">
-                    <div class="title">PRODUCT SLIDER</div>
-                    <div class="topic">Jordan</div>
-                    <div class="des">
-                        <!-- 20 lorem -->
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                    </div>
-                    <!-- <button class="seeMore">SEE MORE &#8599</button> -->
-                </div>
-                
+          <div class="item">
+            <img src="images/shoes.png" />
+            <div class="introduce">
+              <div class="title">PRODUCT SLIDER</div>
+              <div class="topic">Jordan</div>
+              <div class="des">
+                <!-- 20 lorem -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, laborum cumque dignissimos quidem atque et eligendi
+                aperiam voluptates beatae maxime.
+              </div>
             </div>
+          </div>
 
-            <div class="item ">
-                <img src="images/spshoes.png">
-                <div class="introduce">
-                    <div class="title">PRODUCT SLIDER</div>
-                    <div class="topic">Sport Shoes</div>
-                    <div class="des">
-                        <!-- 20 lorem -->
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                    </div>
-                    <!-- <button class="seeMore">SEE MORE &#8599</button> -->
-                </div>
-             
+          <div class="item">
+            <img src="images/spshoes.png" />
+            <div class="introduce">
+              <div class="title">PRODUCT SLIDER</div>
+              <div class="topic">Sport Shoes</div>
+              <div class="des">
+                <!-- 20 lorem -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, laborum cumque dignissimos quidem atque et eligendi
+                aperiam voluptates beatae maxime.
+              </div>
             </div>
+          </div>
 
-            <div class="item">
-                <img src="images/shirt.png">
-                <div class="introduce">
-                    <div class="title">PRODUCT SLIDER</div>
-                    <div class="topic">T-Shirt</div>
-                    <div class="des">
-                        <!-- 20 lorem -->
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                    </div>
-                    <!-- <button class="seeMore">SEE MORE &#8599</button> -->
-                </div>
-                
+          <div class="item">
+            <img src="images/shirt.png" />
+            <div class="introduce">
+              <div class="title">PRODUCT SLIDER</div>
+              <div class="topic">T-Shirt</div>
+              <div class="des">
+                <!-- 20 lorem -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, laborum cumque dignissimos quidem atque et eligendi
+                aperiam voluptates beatae maxime.
+              </div>
             </div>
-
-            <!-- <div class="item">
-                <img src="images/img4.png">
-                <div class="introduce">
-                    <div class="title">PRODUCT SLIDER</div>
-                    <div class="topic">Aerphone</div>
-                    <div class="des">
-                        
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-                    </div>
-                    <!-- <button class="seeMore">SEE MORE &#8599</button> -->
-                </div>
-               
-            </div>
-
-       
+          </div>
         </div>
-        <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
-            <!-- <button id="back">See All  &#8599</button> -->
-        </div>
+      </div>
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+        <!-- <button id="back">See All  &#8599</button> -->
+      </div>
     </div>
-</div>
 
-<div class="season-sector content-wrapper mb-5" >
-    <div class="season-header text-center mb-3">
+    <div class="season-sector container content-wrapper mb-5">
+      <div class="season-header text-center mb-3 content-header">
         <h3>Fashion for Every Season</h3>
-        <p class="mt-4">No matter the weather, your wardrobe should always be ready. Explore our seasonal collections designed to keep you stylish, comfortable, and confident.</p>
-    </div>
-    <div class="row">
-        <div class="col-12 col-xl-4 col-md-3">
-            <div class="season-card">
-                <div class="season-photo">
-                    <img src="images/1.jpeg" class="img-fluid">
-                </div>
-                <div class="season-content text-center summer">
-                    <div class="content-text">
-                        <div class="icon">
-                        <span class="material-symbols-outlined">
-                            sunny
-                            </span>
-                    </div>
-                    <div class="season-text">
-                        Summer Fashion
-                    </div>
-                    </div>
-                </div>
+        <p class="mt-4">
+          No matter the weather, your wardrobe should always be ready. Explore
+          our seasonal collections designed to keep you stylish, comfortable,
+          and confident.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-xl-3 col-md-3">
+          <div class="season-card">
+            <div class="season-photo">
+              <img src="images/1.jpeg" class="img-fluid" />
             </div>
-        </div>
-        <div class="col-12 col-xl-4 col-md-3">
-                       <div class="season-card">
-                <div class="season-photo">
-                    <img src="images/1.jpeg" class="img-fluid">
+            <div class="season-content text-center summer">
+              <div class="content-text">
+                <div class="icon">
+                  <span class="material-symbols-outlined"> sunny </span>
                 </div>
-                <div class="season-content text-center winter">
-                    <div class="content-text">
-                        <div class="icon">
-                      <span class="material-symbols-outlined">
-ac_unit
-</span>
-                    </div>
-                    <div class="season-text">
-                        Winter Fashion
-                    </div>
-                    </div>
-                </div>
+                <div class="season-text">Summer Fashion</div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-12 col-xl-4 col-md-3">
-                       <div class="season-card">
-                <div class="season-photo">
-                    <img src="images/1.jpeg" class="img-fluid">
-                </div>
-                <div class="season-content text-center spring">
-                    <div class="content-text">
-                        <div class="icon">
-                      <span class="material-symbols-outlined">
-local_florist
-</span>
-                    </div>
-                    <div class="season-text">
-                        Spring Fashion
-                    </div>
-                    </div>
-                </div>
+        <div class="col-12 col-xl-3 col-md-3">
+          <div class="season-card">
+            <div class="season-photo">
+              <img src="images/1.jpeg" class="img-fluid" />
             </div>
+            <div class="season-content text-center winter">
+              <div class="content-text">
+                <div class="icon">
+                  <span class="material-symbols-outlined"> ac_unit </span>
+                </div>
+                <div class="season-text">Winter Fashion</div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-    </div>
-</div>
+        <div class="col-12 col-xl-3 col-md-3">
+          <div class="season-card">
+            <div class="season-photo">
+              <img src="images/1.jpeg" class="img-fluid" />
+            </div>
+            <div class="season-content text-center spring">
+              <div class="content-text">
+                <div class="icon">
+                  <span class="material-symbols-outlined"> local_florist </span>
+                </div>
+                <div class="season-text">Spring Fashion</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<div class="trending container content-wrapper mb-5">
-    <div class="trending-header text-center mb-5">
+        <div class="col-12 col-xl-3 col-md-3">
+          <div class="season-card">
+            <div class="season-photo">
+              <img src="images/1.jpeg" class="img-fluid" />
+            </div>
+            <div class="season-content text-center autumn">
+              <div class="content-text">
+                <div class="icon">
+                  <span class="material-symbols-outlined"> cannabis </span>
+                </div>
+                <div class="season-text">Autumn Fashion</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trending container content-wrapper mb-5">
+      <div class="trending-header text-center content-header mb-3">
         <h3>Currently Trending</h3>
-    </div>
-    <div class="trending-photo-list">
-        <div class="trending-photo">
-            <img src="./images/trend-1.jpg" alt="" class="img-fluid">
-        </div>
-         <div class="trending-photo">
-            <img src="./images/trend-2.jpg" alt="" class="img-fluid">
-        </div>
-         <div class="trending-photo">
-            <img src="./images/trend-3.jpg" alt="" class="img-fluid">
-        </div>
-    </div>
-</div>
+        <p class="mt-4">
+          See what everyone’s wearing right now. These styles are making waves
+          this season — don’t miss out.
+        </p>
+      </div>
 
-<div class="essentail container content-wrapper">
-    <div class="essentail text-center mb-5">
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        slides-per-view="3"
+        space-between="30"
+        free-mode="true"
+      >
+        <swiper-slide
+          ><div><img src="./images/trend-1.jpg" alt="" class="img-fluid" /></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div><img src="./images/trend-1.jpg" alt="" class="img-fluid" /></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div><img src="./images/trend-1.jpg" alt="" class="img-fluid" /></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div><img src="./images/trend-1.jpg" alt="" class="img-fluid" /></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div><img src="./images/trend-1.jpg" alt="" class="img-fluid" /></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div><img src="./images/trend-1.jpg" alt="" class="img-fluid" /></div
+        ></swiper-slide>
+      </swiper-container>
+    </div>
+
+    <div class="essentail container content-wrapper">
+      <div class="essentail text-center content-header mb-3">
         <h3>57 Fashion Essentail</h3>
+      </div>
+      <div class="essentail-product">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="30"
+          slides-per-view="3"
+          loop="true"
+        >
+          <swiper-slide
+            ><div><img src="./images/1.jpeg" alt="" class="img-fluid" /></div
+          ></swiper-slide>
+          <swiper-slide
+            ><div><img src="./images/1.jpeg" alt="" class="img-fluid" /></div
+          ></swiper-slide>
+          <swiper-slide
+            ><div><img src="./images/1.jpeg" alt="" class="img-fluid" /></div
+          ></swiper-slide>
+          <swiper-slide
+            ><div><img src="./images/1.jpeg" alt="" class="img-fluid" /></div
+          ></swiper-slide>
+          <swiper-slide
+            ><div><img src="./images/1.jpeg" alt="" class="img-fluid" /></div
+          ></swiper-slide>
+          <swiper-slide
+            ><div><img src="./images/1.jpeg" alt="" class="img-fluid" /></div
+          ></swiper-slide>
+          <swiper-slide
+            ><div><img src="./images/1.jpeg" alt="" class="img-fluid" /></div
+          ></swiper-slide>
+        </swiper-container>
+      </div>
     </div>
 
-</div>
-
-
-
-    <script src="app.js">
-        
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-</body>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
 </html>
